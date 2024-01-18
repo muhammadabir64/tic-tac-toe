@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <!-- Favicon icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico">
+    <!-- External CSS and Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="assets/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <!-- Game title section -->
+        <div class="col-12 text-center mb-2">
+            <h1 class="text-dark">Tic-Tac-Toe</h1>
+            <hr>
+        </div>
+        <!-- Badges for turn information and result display -->
+        <div class="col-md-4 mx-auto">
+            <div class="d-flex justify-content-between">
+                <!-- Badge for user's turn -->
+                <div class="badge bg-info d-none">Your Turns - X</div>
+                <!-- Badge for displaying game result -->
+                <div class="badge d-none result"></div>
+                <!-- Badge for timer -->
+                <div class="badge bg-danger d-none timer"><i class="fas fa-stopwatch"></i> <span id="timerValue">30</span></div>
+                <!-- Badge for opponent's turn -->
+                <div class="badge bg-dark d-none">Opponent Turns - O</div>
+            </div>
+        </div>
+        <!-- Game board section -->
+        <div class="col-12 mb-4">
+        <div class="row">
+            <div class="col-md-6 mx-auto d-flex flex-column justify-content-center align-items-center">
+                <!-- Board layout -->
+                <div class="board card card-body p-1 mx-auto">
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- Button to start a new game -->
+        <div class="col-12 text-center">
+            <button class="btn btn-primary" id="newGameBtn">Start New Game</button>
+        </div>
+        <!-- Game rules section -->
+        <div class="col-12 text-muted mt-4">
+            <hr>
+            <h6 class="fw-bold"><i class="fas fa-flag"></i> Game Rule</h6>
+            <ul>
+                <!-- List of game rules -->
+                <li>You are assigned the symbol X, and the first turn is yours.</li>
+                <li>Click on a square to make a move.</li>
+                <li>The first click on one of the squares marks it with X, the next click with O, and so on.</li>
+                <li>If you have detected a winning situation, the game will declare the winner.</li>
+                <li>If no move was made for 30 seconds, a message of "You Lost" will be displayed, and a new game will start.</li>
+                <li>The game provides a button to start a new game.</li>
+                <li>The game ends with a draw if there's no winner.</li>
+            </ul>
+        </div>        
+    </div>
+</div>
+
+<!-- JavaScript file for game functionality -->
+<script src="assets/script.js"></script>
+</body>
+</html>

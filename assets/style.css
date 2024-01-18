@@ -1,0 +1,21 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    background-color: #fffaeb;
+}
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 125px);
+    grid-gap: 5px;
+    margin-top: 20px;
+}
+.cell {
+    width: 125px;
+    height: 125px;
+    font-size: 65px;
+    color: #53bd99;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
