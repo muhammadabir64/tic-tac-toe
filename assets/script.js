@@ -107,6 +107,10 @@ document.addEventListener("DOMContentLoaded", function () {
     // Add the dark class to user and opponent badges
     userBadge.classList.add('bg-dark');
     opponentBadge.classList.add('bg-dark');
+    setTimeout(() => {
+      startNewGame();
+      resetTimer();
+    }, 2000);
   }
 
   // Function to check for a winner based on the game board
